@@ -89,11 +89,13 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Image.network(
-        'https://static.toiimg.com/thumb/msid-121102346,width-1280,height-720,resizemode-4/121102346.jpg',
-        height: double.infinity,
-        fit: BoxFit.cover,
-      ),
+      body:
+      Image.asset('')
+      //  Image.network(
+      //   'https://static.toiimg.com/thumb/msid-121102346,width-1280,height-720,resizemode-4/121102346.jpg',
+      //   height: double.infinity,
+      //   fit: BoxFit.cover,
+    //  ),
       //Center(
       // Center is a layout widget. It takes a single child and positions it
       // in the middle of the parent.
