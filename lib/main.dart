@@ -88,8 +88,43 @@ class _MyHomePageState extends State<MyHomePage> {
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
+        leading: Icon(Icons.access_alarms_sharp),
       ),
-      body: Image.asset('assets/images/wuwa-carth.jpg'),
+      body: Container(
+        padding: EdgeInsets.all(10),
+        child: Stack(
+          children: [
+            Image.asset(
+              'assets/images/wuwa-carth.jpg',
+              fit: BoxFit.cover,
+              height: 400,
+            ),
+            SizedBox(
+              height: 100,
+              child: Center(
+                child: Text(
+                  "Carthetiya",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 40,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+              ),
+            ),
+
+            ListTile(
+              leading: Icon(Icons.account_balance_wallet_outlined),
+              tileColor:  Colors.amber,
+              title: Text("nam"),
+              trailing: Text("hiiiiiiiiiiiiiiiii"),
+              onTap: () {
+                print("onfunction");
+              },
+            ),
+          ],
+        ),
+      ),
       //  Image.network(
       //   'https://static.toiimg.com/thumb/msid-121102346,width-1280,height-720,resizemode-4/121102346.jpg',
       //   height: double.infinity,
